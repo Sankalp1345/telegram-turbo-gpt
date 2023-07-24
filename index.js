@@ -38,7 +38,7 @@ const handleText = async (msg) => {
     const userMessage = msg.text;
 
     if (userMessage === '/start') {
-        await bot.sendMessage(chatId, `Hello, ${msg.from.first_name}!`);
+        await bot.sendMessage(chatId, `Hello, ${msg.from.first_name}!.\n This Bot Was Developed By BLACKHOLEFOX.`);
         await bot.sendMessage(chatId, `This bot uses GPT-Turbo 3.5 and Dall-E models to generate responses to your query.`);
         console.log(`Request ${requestCount} completed!`);
         return;
